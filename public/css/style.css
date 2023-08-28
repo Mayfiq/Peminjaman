@@ -1,0 +1,94 @@
+
+
+/* Rest of the existing CSS */
+
+/* Navbar styles */
+.navbar {
+    background-color: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: #fff; /* Background color when hovering */
+    color: #007bff; /* Text color when hovering */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of the existing CSS */
+
+/* Media query for the responsive design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #007bff;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+/* Default toast position for larger screens */
+.toast {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* Adjust toast position for smaller screens (mobile view) */
+  @media (max-width: 767px) {
+    .toast {
+      top: 50px; /* Change the top position as per your preference */
+      right: 10px; /* Change the right position as per your preference */
+    }
+  }
+  
+
